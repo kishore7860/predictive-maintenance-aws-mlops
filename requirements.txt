@@ -1,0 +1,13 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+tensorflow
+mlflow
+boto3
+sagemaker
+fastapi
+uvicorn
+streamlit
+python-multipart

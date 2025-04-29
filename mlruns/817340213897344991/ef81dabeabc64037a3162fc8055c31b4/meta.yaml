@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/kishorereddymamidi/Pictures/pros/predictive-maintenance-aws-mlops/mlruns/817340213897344991/ef81dabeabc64037a3162fc8055c31b4/artifacts
+end_time: 1745948981620
+entry_point_name: ''
+experiment_id: '817340213897344991'
+lifecycle_stage: active
+run_id: ef81dabeabc64037a3162fc8055c31b4
+run_name: bold-hound-15
+run_uuid: ef81dabeabc64037a3162fc8055c31b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745948978781
+status: 3
+tags: []
+user_id: kishorereddymamidi
