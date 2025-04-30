@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from src.predict import predict_rul
+from src.predict import *
 
 app = FastAPI(title="Predictive Maintenance API", description="Predict Remaining Useful Life (RUL)", version="1.0")
 
@@ -40,3 +40,10 @@ def predict(data: SensorData):
     sensor_dict = data.dict()
     prediction = predict_rul(sensor_dict)
     return {"predicted_RUL": prediction}
+
+@app.post("/compare")
+def compare_models(data: SensorData):
+    sensor_dict = data.dict()
+    rf_rul = predict_rul_rf(sensor_dict)
+    lstm_rul = predict_rul_lstm(sensor_dict)
+    return {"RandomForest_RUL": rf_rul, "LSTM_RUL": lstm_rul}
