@@ -89,7 +89,7 @@ st.markdown("---")
 st.subheader("📊 Sensor Trend Viewer (From Your Dataset)")
 
 try:
-    cmapss_df = load_cmapss_dataset("../data/raw/train_FD001.txt")
+    cmapss_df = load_cmapss_dataset("data/raw/train_FD001.txt")
 
     selected_unit = st.selectbox("Select Engine Unit", cmapss_df['unit_number'].unique())
     unit_data = cmapss_df[cmapss_df['unit_number'] == selected_unit]

@@ -19,7 +19,7 @@ def add_rul(df):
     return df
 
 if __name__ == "__main__":
-    data_path = "../data/raw/train_FD001.txt"
+    data_path = "data/raw/train_FD001.txt"
     df = load_cmapss_dataset(data_path)
     df = add_rul(df)
     print(df.head())
